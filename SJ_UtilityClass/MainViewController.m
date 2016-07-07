@@ -8,11 +8,12 @@
 
 #import "MainViewController.h"
 #import "CountdownViewController.h"
+#import "AttributedStringVC.h"
 
 #define cellHeight 70
 
-#define kLabelTitles @[@"1- 倒计时"]
-#define kDetialLabelText @[@"CountdownViewController"]
+#define kLabelTitles @[@"1- 倒计时", @"2- 富文本处理字符串"]
+#define kDetialLabelText @[@"CountdownViewController", @"AttributedStringVC"]
 
 @interface MainViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong) UITableView *tableView;
@@ -84,6 +85,12 @@
             [self.navigationController pushViewController:countdownVC animated:YES];
         }
             break;
+        case 1:{
+            AttributedStringVC *attVC = [[AttributedStringVC alloc] init];
+            [self.navigationController pushViewController:attVC animated:YES];
+        }
+            break;
+
         default:
             break;
     }

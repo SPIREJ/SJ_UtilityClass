@@ -17,6 +17,8 @@
 		09B1C8F11D2E43EF0091D414 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B1C8F01D2E43EF0091D414 /* MainViewController.m */; };
 		09B1C8F71D2E48490091D414 /* CountdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B1C8F51D2E48490091D414 /* CountdownViewController.m */; };
 		09B1C8F81D2E48490091D414 /* CountdownViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B1C8F61D2E48490091D414 /* CountdownViewController.xib */; };
+		09B1C8FD1D2E58C60091D414 /* AttributedStringVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B1C8FB1D2E58C60091D414 /* AttributedStringVC.m */; };
+		09B1C8FE1D2E58C60091D414 /* AttributedStringVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B1C8FC1D2E58C60091D414 /* AttributedStringVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,9 @@
 		09B1C8F41D2E48490091D414 /* CountdownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountdownViewController.h; sourceTree = "<group>"; };
 		09B1C8F51D2E48490091D414 /* CountdownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountdownViewController.m; sourceTree = "<group>"; };
 		09B1C8F61D2E48490091D414 /* CountdownViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountdownViewController.xib; sourceTree = "<group>"; };
+		09B1C8FA1D2E58C60091D414 /* AttributedStringVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedStringVC.h; sourceTree = "<group>"; };
+		09B1C8FB1D2E58C60091D414 /* AttributedStringVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributedStringVC.m; sourceTree = "<group>"; };
+		09B1C8FC1D2E58C60091D414 /* AttributedStringVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttributedStringVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +112,7 @@
 		09B1C8BB1D2E43B80091D414 /* SJ_UtilityClass */ = {
 			isa = PBXGroup;
 			children = (
+				09B1C8F91D2E589C0091D414 /* AttributedString */,
 				09B1C8F31D2E47BF0091D414 /* Countdown */,
 				09B1C8BF1D2E43B80091D414 /* AppDelegate.h */,
 				09B1C8C01D2E43B80091D414 /* AppDelegate.m */,
@@ -156,6 +162,16 @@
 				09B1C8F61D2E48490091D414 /* CountdownViewController.xib */,
 			);
 			path = Countdown;
+			sourceTree = "<group>";
+		};
+		09B1C8F91D2E589C0091D414 /* AttributedString */ = {
+			isa = PBXGroup;
+			children = (
+				09B1C8FA1D2E58C60091D414 /* AttributedStringVC.h */,
+				09B1C8FB1D2E58C60091D414 /* AttributedStringVC.m */,
+				09B1C8FC1D2E58C60091D414 /* AttributedStringVC.xib */,
+			);
+			path = AttributedString;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +279,7 @@
 			files = (
 				09B1C8F81D2E48490091D414 /* CountdownViewController.xib in Resources */,
 				09B1C8CC1D2E43B80091D414 /* LaunchScreen.storyboard in Resources */,
+				09B1C8FE1D2E58C60091D414 /* AttributedStringVC.xib in Resources */,
 				09B1C8C91D2E43B80091D414 /* Assets.xcassets in Resources */,
 				09B1C8C71D2E43B80091D414 /* Main.storyboard in Resources */,
 			);
@@ -293,6 +310,7 @@
 				09B1C8C11D2E43B80091D414 /* AppDelegate.m in Sources */,
 				09B1C8F11D2E43EF0091D414 /* MainViewController.m in Sources */,
 				09B1C8BE1D2E43B80091D414 /* main.m in Sources */,
+				09B1C8FD1D2E58C60091D414 /* AttributedStringVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
