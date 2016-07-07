@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  SJ_UtilityClass
+//
+//  Created by SPIREJ on 16/7/7.
+//  Copyright © 2016年 SPIREJ. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define kDeviceWidth           [UIScreen mainScreen].bounds.size.width
+#define KDeviceHeight          [UIScreen mainScreen].bounds.size.height
+
+#endif /* PrefixHeader_pch */

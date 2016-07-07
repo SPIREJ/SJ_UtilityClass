@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainViewController.h
 //  SJ_UtilityClass
 //
 //  Created by SPIREJ on 16/7/7.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MainViewController : UIViewController
 
 @end
-
