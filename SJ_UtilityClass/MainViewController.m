@@ -7,11 +7,12 @@
 //
 
 #import "MainViewController.h"
+#import "CountdownViewController.h"
 
 #define cellHeight 70
 
-#define kLabelTitles @[]
-#define kDetialLabelText @[]
+#define kLabelTitles @[@"1- 倒计时"]
+#define kDetialLabelText @[@"CountdownViewController"]
 
 @interface MainViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong) UITableView *tableView;
@@ -78,6 +79,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     switch (indexPath.row) {
+        case 0:{
+            CountdownViewController *countdownVC = [[CountdownViewController alloc] init];
+            [self.navigationController pushViewController:countdownVC animated:YES];
+        }
+            break;
         default:
             break;
     }

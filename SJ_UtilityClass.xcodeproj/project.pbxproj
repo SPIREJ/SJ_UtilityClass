@@ -15,6 +15,8 @@
 		09B1C8D71D2E43B80091D414 /* SJ_UtilityClassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B1C8D61D2E43B80091D414 /* SJ_UtilityClassTests.m */; };
 		09B1C8E21D2E43B80091D414 /* SJ_UtilityClassUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B1C8E11D2E43B80091D414 /* SJ_UtilityClassUITests.m */; };
 		09B1C8F11D2E43EF0091D414 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B1C8F01D2E43EF0091D414 /* MainViewController.m */; };
+		09B1C8F71D2E48490091D414 /* CountdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B1C8F51D2E48490091D414 /* CountdownViewController.m */; };
+		09B1C8F81D2E48490091D414 /* CountdownViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B1C8F61D2E48490091D414 /* CountdownViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,9 @@
 		09B1C8EF1D2E43EF0091D414 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		09B1C8F01D2E43EF0091D414 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		09B1C8F21D2E46510091D414 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		09B1C8F41D2E48490091D414 /* CountdownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountdownViewController.h; sourceTree = "<group>"; };
+		09B1C8F51D2E48490091D414 /* CountdownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountdownViewController.m; sourceTree = "<group>"; };
+		09B1C8F61D2E48490091D414 /* CountdownViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountdownViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +107,7 @@
 		09B1C8BB1D2E43B80091D414 /* SJ_UtilityClass */ = {
 			isa = PBXGroup;
 			children = (
+				09B1C8F31D2E47BF0091D414 /* Countdown */,
 				09B1C8BF1D2E43B80091D414 /* AppDelegate.h */,
 				09B1C8C01D2E43B80091D414 /* AppDelegate.m */,
 				09B1C8EF1D2E43EF0091D414 /* MainViewController.h */,
@@ -140,6 +146,16 @@
 				09B1C8E31D2E43B80091D414 /* Info.plist */,
 			);
 			path = SJ_UtilityClassUITests;
+			sourceTree = "<group>";
+		};
+		09B1C8F31D2E47BF0091D414 /* Countdown */ = {
+			isa = PBXGroup;
+			children = (
+				09B1C8F41D2E48490091D414 /* CountdownViewController.h */,
+				09B1C8F51D2E48490091D414 /* CountdownViewController.m */,
+				09B1C8F61D2E48490091D414 /* CountdownViewController.xib */,
+			);
+			path = Countdown;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09B1C8F81D2E48490091D414 /* CountdownViewController.xib in Resources */,
 				09B1C8CC1D2E43B80091D414 /* LaunchScreen.storyboard in Resources */,
 				09B1C8C91D2E43B80091D414 /* Assets.xcassets in Resources */,
 				09B1C8C71D2E43B80091D414 /* Main.storyboard in Resources */,
@@ -272,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09B1C8F71D2E48490091D414 /* CountdownViewController.m in Sources */,
 				09B1C8C11D2E43B80091D414 /* AppDelegate.m in Sources */,
 				09B1C8F11D2E43EF0091D414 /* MainViewController.m in Sources */,
 				09B1C8BE1D2E43B80091D414 /* main.m in Sources */,
