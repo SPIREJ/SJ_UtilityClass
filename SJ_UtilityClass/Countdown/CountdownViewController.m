@@ -72,10 +72,19 @@
 
 - (IBAction)startAction:(UIButton *)sender {
     NSString *time = self.textTF.text;
+    if (![SJTools stringValid:time]) {
+        [XSMSGManager showText:@"时间不能为空" inView:self.view];
+        return;
+    }
     [self gcdCountdownWithTime:[time integerValue]];
 }
 
 - (IBAction)nstimerAction:(UIButton *)sender {
+    NSString *time = self.textTF.text;
+    if (![SJTools stringValid:time]) {
+        [XSMSGManager showText:@"时间不能为空" inView:self.view];
+        return;
+    }
     [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(timerFireMethod:) userInfo:nil repeats:YES];
 }
 

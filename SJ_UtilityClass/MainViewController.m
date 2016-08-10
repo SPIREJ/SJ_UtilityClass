@@ -9,11 +9,14 @@
 #import "MainViewController.h"
 #import "CountdownViewController.h"
 #import "AttributedStringVC.h"
+#import "VerifyViewController.h"
+#import "EKeventViewController.h"
+#import "ArchiveViewController.h"
 
 #define cellHeight 70
 
-#define kLabelTitles @[@"1- 倒计时", @"2- 富文本处理字符串"]
-#define kDetialLabelText @[@"CountdownViewController", @"AttributedStringVC"]
+#define kLabelTitles @[@"1- 倒计时", @"2- 富文本处理字符串", @"3- 校验类", @"4- 日历提醒", @"5- 归档"]
+#define kDetialLabelText @[@"CountdownViewController", @"AttributedStringVC", @"VerifyViewController", @"EKeventViewController",@"ArchiveViewController"]
 
 @interface MainViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong) UITableView *tableView;
@@ -90,7 +93,21 @@
             [self.navigationController pushViewController:attVC animated:YES];
         }
             break;
-
+        case 2: {
+            VerifyViewController *verifyVC = [[VerifyViewController alloc] init];
+            [self.navigationController pushViewController:verifyVC animated:YES];
+        }
+            break;
+        case 3:{
+            EKeventViewController *ekeventVC = [[EKeventViewController alloc] init];
+            [self.navigationController pushViewController:ekeventVC animated:YES];
+        }
+            break;
+        case 4:{
+            ArchiveViewController *archiveVC = [[ArchiveViewController alloc] init];
+            [self.navigationController pushViewController:archiveVC animated:YES];
+        }
+            break;
         default:
             break;
     }
